@@ -52,12 +52,15 @@ const HeroSlider: React.FC = () => {
     }, [currentSlide, goToSlide]);
 
     useEffect(() => {
-        type Timeout = number;
-        let interval: Timeout | undefined;
+        let interval: number | undefined;  // Explicitly define it as `number`
         if (isAutoPlaying) {
-            interval = setInterval(nextSlide, 5000);
+            interval = window.setInterval(nextSlide, 5000); // Use window.setInterval to ensure correct typing
         }
-        return () => clearInterval(interval);
+        return () => {
+            if (interval) {
+                clearInterval(interval);  // interval is now a number
+            }
+        };
     }, [isAutoPlaying, nextSlide]);
 
     return (
