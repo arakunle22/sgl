@@ -2,7 +2,7 @@
 
 const HeroSection = () => {
     return (
-        <div className="relative min-h-[100px] w-full bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center overflow-hidden">
+        <div className="relative min-h-[80px] w-full bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center overflow-hidden">
             {/* Animated background dots */}
             <div className="absolute inset-0 opacity-10">
                 <div className="absolute inset-0 grid grid-cols-12 gap-4 transform rotate-12">

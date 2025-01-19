@@ -65,7 +65,7 @@ const HeroSlider: React.FC = () => {
 
     return (
         <div className="relative w-full overflow-hidden">
-            <div className="h-[calc(100vh-12rem)] sm:h-[calc(100vh-13rem)] lg:h-[calc(100vh-14rem)] relative">
+            <div className="h-[calc(100vh-17rem)] sm:h-[calc(100vh-18rem)] lg:h-[calc(100vh-19rem)] relative">
                 {/* Slides */}
                 {slides.map((slide, index) => (
                     <div

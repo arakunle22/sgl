@@ -1,11 +1,11 @@
 import React from 'react';
-import { 
-  Wrench, 
-  ShoppingCart, 
-  Building2, 
-  Anchor, 
-  Factory, 
-  Settings, 
+import {
+  Wrench,
+  ShoppingCart,
+  Building2,
+  Anchor,
+  Factory,
+  Settings,
   PenLine, // Replacing Pipeline
   Scan // Replacing Scan3d
 } from 'lucide-react';
@@ -79,13 +79,18 @@ const ServicesSection: React.FC = () => {
 
   return (
     <div className="relative w-full bg-gray-50 py-16 md:py-24 overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-[url('/api/placeholder/1920/1080')] bg-no-repeat bg-right-top opacity-5"
-        style={{ backgroundSize: 'auto' }}
-      />
+      <div
+        className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800 opacity-90"
+        style={{
+          backgroundImage: `url('https://seflamsgl.com/wp-content/uploads/2018/06/pipeline-vector-10.png'), linear-gradient(to bottom right, slate-900, slate-800)`,
+          backgroundSize: 'auto',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right top',
+          backgroundBlendMode: 'overlay',
+        }} />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-200 mb-4">
             OUR SERVICES
           </h2>
           <div className="w-20 h-1 bg-red-600 mx-auto rounded-full" />

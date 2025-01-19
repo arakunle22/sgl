@@ -106,13 +106,14 @@ const Footer = () => {
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className={`fixed bottom-6 right-6 bg-red-500 text-white rounded-full p-3 shadow-lg
-          hover:bg-red-600 transform hover:scale-110 transition-all duration-300 focus:outline-none
-          focus:ring-2 focus:ring-red-500 focus:ring-offset-2
-          ${showScroll ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
+    hover:bg-red-600 transform hover:scale-110 transition-all duration-300 focus:outline-none
+    focus:ring-2 focus:ring-red-500 focus:ring-offset-2 z-50
+    ${showScroll ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
         aria-label="Scroll to top"
       >
         <ArrowUp size={20} />
       </button>
+
     </footer>
   );
 };
